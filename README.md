@@ -1,36 +1,19 @@
-# Portfolio
+# Blog
 
-This is Portfolio web application implemented by ecewo.
+This is My Blog written in c language using ecewo framework.
 
 ## build and run
 
 1. clone this repository.
 2. create build directory.
-3. execute run.sh script.
 
 ```sh
 mkdir build
 ```
 
 ```shell
-./run.sh
+make
 ```
-
-## watch HTML changes
-
-HTML 파일을 수정하면서 자동으로 빌드 및 실행하려면:
-
-```sh
-# fswatch 설치 (첫 실행 시에만)
-brew install fswatch
-```
-
-```shell
-./watch.sh
-```
-
-`watch.sh` 실행 후 `public/` 디렉토리의 HTML 파일을 수정하면 자동으로 `run.sh`가 실행됩니다.
-중지하려면 **Ctrl+C**를 누르세요.
 
 ## PUBLIC_DIR 변수
 
