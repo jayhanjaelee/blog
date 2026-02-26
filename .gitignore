@@ -3,3 +3,6 @@ build/
 .cache/
 **/*.swp
 src/ctags
+/.playwright-mcp
+/public/.DS_Store
+/.DS_Store

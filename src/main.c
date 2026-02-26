@@ -4,7 +4,7 @@
  * @date 2026-01-28 23:52
  */
 
-#define PORT 8888
+#define PORT 8100
 
 #include <stdio.h>
 
@@ -32,6 +32,7 @@ int main(void) {
     }
 
     get("/", index_controller);
+    get("/write", write_controller);
     get("/ping", ping);
 
      // Register cleanup handler (also cleans up fs module)

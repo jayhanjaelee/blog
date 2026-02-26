@@ -3,9 +3,10 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <title>Hanjae Lee's Blog - Index</title>
+        <title>Hanjae Lee's Blog - Write</title>
         <link rel="icon" type="image/x-icon" href="/public/favicon.ico">
         <link rel="stylesheet" href="/public/style.css">
+        <link rel="stylesheet" href="/public/write.css">
     </head>
 
     <body>
@@ -27,20 +28,24 @@
         </header>
         <!-- header end -->
 
-        <!-- main start -->
         <main>
-            <p>
-                안녕하세요. 이한재라고 합니다.
-                <br>
-                해당 블로그는 저의 인생과 개발자로서의 여정을 담기 위한 블로그입니다.
-            </p>
-            <div class="posts-container">
-                <div>Posts Section 1</div>
-                <div>Posts Section 2</div>
-                <div>Posts Section 3</div>
+            <div class="write-container">
+
+                <form action="/ping">
+                    <div>
+                        <label for="title">제목</label>
+                        <input type="text" id="title" name="title" placeholder="Enter title">
+                    </div>
+                    <div>
+                        <label for="content">내용</label>
+                        <textarea id="story" name="story" rows="10" cols="100">
+                        </textarea>
+                    </div>
+                    <button type="submit">Save</button>
+                </form>
+
             </div>
         </main>
-        <!-- main end -->
 
         <!-- footer start -->
         <footer class="border">
@@ -50,3 +55,4 @@
         <!-- footer end -->
     </body>
 </html>
+
